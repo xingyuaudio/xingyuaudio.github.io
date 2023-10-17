@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Xingyu Chen"
+title                    : "Home"
 title_separator          : "-"
 name                     : &name "Xingyu Chen"
 description              : &description "personal description"
@@ -96,7 +96,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "github.com/xingyuaudio"
+  github           : "xingyuaudio"
   google_plus      :
   keybase          :
   instagram        :
