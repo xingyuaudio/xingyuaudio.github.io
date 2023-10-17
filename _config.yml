@@ -81,11 +81,11 @@ analytics:
 # Site Author
 author:
   name             : "Xingyu Chen"
-  avatar           : "profile.png"
+  avatar           : "profile.jpg"
   bio              : ""
   #location         : "Location"
   employer         :
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
+  #pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   googlescholar    : "https://scholar.google.com/citations?user=u7YilpkAAAAJ&hl=en"
   email            :
   #researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
@@ -96,7 +96,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "https://github.com/xingyuaudio"
+  github           : "github.com/xingyuaudio"
   google_plus      :
   keybase          :
   instagram        :
