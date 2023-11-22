@@ -19,7 +19,7 @@ We propose a physics-informed neural network (PINN) method for HRTF upsampling. 
 of acoustic wave propagation, for regularizing the upsampling process. This helps the generation of physically valid upsamplings that generalize beyond the measured HRTF. Furthermore, the size (width and depth) of the PINN is set according to the Helmholtz equation and its solutions, the spherical harmonics (SHs). This makes the PINN have an appropriate level of expressive power and thus does not suffer from the over-fitting problem. 
 
 [code](https://github.com/feima1024/PINN-for-HRTF-upsampling)
-[pdf](http://xingyuaudio.github.io/files/Physics Informed Neural Network for Head-Related Transfer Function Upsampling.pdf).
+[pdf](http://xingyuaudio.github.io/files/HRTF.pdf).
 
 ## Sound Field Estimation around a Rigid Sphere with Physics-informed Neural Network
 We propose a method for sound field estimation based on a physics-informed neural network. This method integrates physical knowledge into the architecture and training process of the network.
