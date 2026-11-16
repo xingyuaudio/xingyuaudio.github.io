@@ -1,0 +1,8 @@
+<article class="publication" id="{{ paper.id }}" data-topic="{{ paper.topic | escape }}">
+  <div class="publication-meta"><span class="pub-kind{% if paper.kind == 'Preprint' %} preprint{% endif %}">{{ paper.kind }}</span><span>{{ paper.year }}</span><span class="pub-topic">{{ paper.topic }}</span></div>
+  <h3><a href="{% if paper.links.Paper %}{{ paper.links.Paper }}{% else %}{{ paper.scholar }}{% endif %}">{{ paper.title | escape }}</a></h3>
+  <p class="authors">{{ paper.authors | escape | replace: 'Xingyu Chen', '<strong>Xingyu Chen</strong>' }}</p>
+  <p class="venue">{{ paper.venue | escape }}</p>
+  {% if paper.summary != '' %}<p class="paper-summary">{{ paper.summary | escape }}</p>{% endif %}
+  <div class="paper-links" aria-label="Publication resources">{% for link in paper.links %}<a href="{{ link[1] }}">{{ link[0] }} <span aria-hidden="true">↗</span></a>{% endfor %}<a href="{{ paper.scholar }}">Scholar <span aria-hidden="true">↗</span></a></div>
+</article>

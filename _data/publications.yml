@@ -1,0 +1,166 @@
+- id: fd-conformer
+  title: Exploring frequency-domain feature modeling for head-related transfer functions magnitude upsampling
+  authors: Xingyu Chen, Hanwen Bi, Fei Ma, Sipei Zhao, Eva Cheng, Ian S. Burnett
+  venue: The Journal of the Acoustical Society of America, 160(5), 3663–3674
+  year: 2026
+  kind: Journal
+  topic: HRTF
+  scholar: https://scholar.google.com.au/citations?user=u7YilpkAAAAJ&hl=en&view_op=view_citation&citation_for_view=u7YilpkAAAAJ:4TOpqqG69KYC
+  summary: Explicitly modeling dependencies across frequency improves HRTF reconstruction from sparse spatial measurements.
+  featured: true
+  links:
+    Paper: https://doi.org/10.1121/10.0047189
+    Preprint: https://arxiv.org/abs/2602.11670
+    Code: https://github.com/xingyuaudio/FD-Conformer
+- id: driftaudio
+  title: 'DriftAudio: Marginal Drifting for Distributional Post-Training of One-Step Text-to-Audio Generators'
+  authors: Xingyu Chen, Fei Ma, Sipei Zhao
+  venue: arXiv:2609.27598
+  year: 2026
+  kind: Preprint
+  topic: Audio generation
+  scholar: https://scholar.google.com.au/citations?user=u7YilpkAAAAJ&hl=en&view_op=view_citation&citation_for_view=u7YilpkAAAAJ:_kc_bZDykSQC
+  summary: Distributional post-training improves pretrained text-to-audio generators while preserving one-step inference.
+  featured: true
+  links:
+    Paper: https://arxiv.org/abs/2609.27598
+    Code: https://github.com/xingyuaudio/DriftAudio
+    Demo: https://xingyuaudio.github.io/driftaudio-demo/
+- id: geoatt
+  title: HRTF Upsampling Across Varying Measurement Configurations with Geometry-Aware Query-Conditioned Aggregation
+  authors: Xingyu Chen, Hanwen Bi, Sipei Zhao, Fei Ma, Eva Cheng, Ian S. Burnett
+  venue: arXiv:2609.25995
+  year: 2026
+  kind: Preprint
+  topic: HRTF
+  scholar: https://scholar.google.com.au/citations?user=u7YilpkAAAAJ&hl=en&view_op=view_citation&citation_for_view=u7YilpkAAAAJ:YOwf2qJgpHMC
+  summary: GeoAtt uses geometry-aware, query-conditioned aggregation to support varying measurement counts and layouts with
+    a single model.
+  featured: true
+  links:
+    Paper: https://arxiv.org/abs/2609.25995
+    Code: https://github.com/xingyuaudio/GeoAtt-HRTF
+- id: region-to-region
+  title: Permutation-Invariant Physics-Informed Neural Network for Region-to-Region Sound Field Reconstruction
+  authors: Xingyu Chen, Sipei Zhao, Fei Ma, Eva Cheng, Ian S. Burnett
+  venue: 31st International Congress on Sound and Vibration (ICSV31), 1–8
+  year: 2025
+  kind: Conference
+  topic: Sound field
+  scholar: https://scholar.google.com.au/citations?user=u7YilpkAAAAJ&hl=en&view_op=view_citation&citation_for_view=u7YilpkAAAAJ:kNdYIx-mwKoC
+  summary: A permutation-invariant model combines acoustic reciprocity and the Helmholtz equation for reconstruction across
+    source and receiver regions.
+  featured: true
+  links:
+    Paper: https://arxiv.org/abs/2601.19491
+- id: ramdc
+  title: 'RAMDC: Room-Aware Multi-Device Clustering for Large Scale Teleconferencing'
+  authors: Yile Angela Zhang, Wei-Ting Lai, Amy Bastine, Xingyu Chen, Lachlan I. Birnie, Thushara D. Abhayapala, Prasanga
+    N. Samarasinghe
+  venue: APSIPA Annual Summit and Conference (APSIPA ASC), 447–452
+  year: 2025
+  kind: Conference
+  topic: Sound field
+  scholar: https://scholar.google.com.au/citations?user=u7YilpkAAAAJ&hl=en&view_op=view_citation&citation_for_view=u7YilpkAAAAJ:3fE2CSJIrl8C
+  summary: Acoustic responses identify devices sharing a room to help reduce cross-device feedback in teleconferencing.
+  featured: false
+  links:
+    Paper: https://ieeexplore.ieee.org/abstract/document/11249230/
+    PDF: https://www.apsipa.org/proceedings/2025/papers/APSIPA2025_P458.pdf
+- id: thesis
+  title: Learning-integrated Methods for Spatial Audio Capture and Reproduction
+  authors: Xingyu Chen
+  venue: MPhil thesis, Australian National University
+  year: 2025
+  kind: Thesis
+  topic: Sound field
+  scholar: https://scholar.google.com.au/citations?user=u7YilpkAAAAJ&hl=en&view_op=view_citation&citation_for_view=u7YilpkAAAAJ:MXK_kJrjxJIC
+  summary: Deep learning for sound field estimation, HRTF interpolation, and speech enhancement on drones.
+  featured: false
+  links: {}
+- id: drone
+  title: Monaural speech enhancement on drone via Adapter based transfer learning
+  authors: Xingyu Chen, Hanwen Bi, Wei-Ting Lai, Fei Ma
+  venue: 18th International Workshop on Acoustic Signal Enhancement (IWAENC), 85–89
+  year: 2024
+  kind: Conference
+  topic: Speech
+  scholar: https://scholar.google.com.au/citations?user=u7YilpkAAAAJ&hl=en&view_op=view_citation&citation_for_view=u7YilpkAAAAJ:0EnyYjriUFMC
+  summary: Adapter-based transfer learning adapts a pretrained speech enhancement model to drone noise.
+  featured: false
+  links:
+    Paper: https://arxiv.org/abs/2405.10022
+- id: srp
+  title: Source localization by multidimensional steered response power mapping with sparse Bayesian learning
+  authors: Wei-Ting Lai, Lachlan Birnie, Xingyu Chen, Amy Bastine, Thushara D. Abhayapala, Prasanga N. Samarasinghe
+  venue: 18th International Workshop on Acoustic Signal Enhancement (IWAENC), 31–35
+  year: 2024
+  kind: Conference
+  topic: Sound field
+  scholar: https://scholar.google.com.au/citations?user=u7YilpkAAAAJ&hl=en&view_op=view_citation&citation_for_view=u7YilpkAAAAJ:5nxA0vEk-isC
+  summary: ''
+  featured: false
+  links: {}
+- id: sphere
+  title: Sound field estimation around a rigid sphere with physics-informed neural network
+  authors: Xingyu Chen, Fei Ma, Amy Bastine, Prasanga Samarasinghe, H. Sun
+  venue: APSIPA Annual Summit and Conference (APSIPA ASC)
+  year: 2023
+  kind: Conference
+  topic: Sound field
+  scholar: https://scholar.google.com.au/citations?user=u7YilpkAAAAJ&hl=en&view_op=view_citation&citation_for_view=u7YilpkAAAAJ:ufrVoPGSRksC
+  summary: Physical constraints guide sound field estimation around a rigid sphere from limited spatial measurements.
+  featured: false
+  links:
+    PDF: /files/Sound_Field_Estimation_around_a_Rigid_Sphere_with_Physics_informed_Neural_Network.pdf
+    Code: https://github.com/xingyuaudio/pinn_estimation
+- id: spherical-cnn
+  title: Head-related transfer function interpolation with a spherical CNN
+  authors: Xingyu Chen, Fei Ma, Yile Zhang, Amy Bastine, Prasanga N. Samarasinghe
+  venue: arXiv:2309.08290
+  year: 2023
+  kind: Preprint
+  topic: HRTF
+  scholar: https://scholar.google.com.au/citations?user=u7YilpkAAAAJ&hl=en&view_op=view_citation&citation_for_view=u7YilpkAAAAJ:YsMSGLbcyi4C
+  summary: Spherical convolution captures the spatial structure of HRTFs through spherical harmonic representations.
+  featured: false
+  links:
+    Paper: https://arxiv.org/abs/2309.08290
+    Code: https://github.com/xingyuaudio/HRTF-SCNN
+- id: pinn-hrtf
+  title: Spatial Upsampling of Head-Related Transfer Functions Using a Physics-Informed Neural Network
+  authors: Fei Ma, Thushara D. Abhayapala, Prasanga N. Samarasinghe, Xingyu Chen
+  venue: arXiv:2307.14650
+  year: 2023
+  kind: Preprint
+  topic: HRTF
+  scholar: https://scholar.google.com.au/citations?user=u7YilpkAAAAJ&hl=en&view_op=view_citation&citation_for_view=u7YilpkAAAAJ:WF5omc3nYNoC
+  summary: The Helmholtz equation provides a physical constraint for reconstructing HRTFs at unmeasured directions.
+  featured: false
+  links:
+    Paper: https://arxiv.org/abs/2307.14650
+    Code: https://github.com/feima1024/PINN-for-HRTF-upsampling
+- id: asa-abstract
+  title: Head-related transfer functions upsampling with physics-informed spherical convolutional neural network
+  authors: Xingyu Chen, Fei Ma, Prasanga N. Samarasinghe
+  venue: The Journal of the Acoustical Society of America, 154(4_supplement), A183
+  year: 2023
+  kind: Meeting abstract
+  topic: HRTF
+  scholar: https://scholar.google.com.au/citations?user=u7YilpkAAAAJ&hl=en&view_op=view_citation&citation_for_view=u7YilpkAAAAJ:eQOLeE2rZwMC
+  summary: ''
+  featured: false
+  links:
+    Paper: https://doi.org/10.1121/10.0023204
+- id: invariant-ekf
+  title: Closed-Form Error Propagation on SE_n(3) Group for Invariant EKF With Applications to VINS
+  authors: X. Li, H. Jiang, Xingyu Chen, H. Kong, J. Wu
+  venue: IEEE Robotics and Automation Letters, 7(4), 10705–10712
+  year: 2022
+  kind: Journal
+  topic: Other
+  scholar: https://scholar.google.com.au/citations?user=u7YilpkAAAAJ&hl=en&view_op=view_citation&citation_for_view=u7YilpkAAAAJ:9yKSN-GCB0IC
+  summary: ''
+  featured: false
+  links:
+    PDF: /files/Closed-Form_Error_Propagation_on_SE_n3_Group_for_Invariant_EKF_With_Applications_to_VINS.pdf

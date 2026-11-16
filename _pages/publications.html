@@ -1,0 +1,22 @@
+---
+layout: academic
+title: Publications
+permalink: /publications/
+nav: publications
+redirect_from: [/markdown/, /markdown.html, /md/]
+---
+<header class="page-heading"><p class="eyebrow">RESEARCH OUTPUT</p><h1>Publications</h1><p>Work on spatial audio, acoustic reconstruction, and audio generation.<br>Full citation records are available on <a href="{{ site.data.profile.scholar }}">Google Scholar ↗</a>.</p></header>
+<div class="publication-tools" hidden>
+  <div class="filter-buttons" role="group" aria-label="Filter publications by topic">
+    <button type="button" data-topic="All" aria-pressed="true">All</button><button type="button" data-topic="HRTF" aria-pressed="false">HRTF</button><button type="button" data-topic="Sound field" aria-pressed="false">Sound field</button><button type="button" data-topic="Audio generation" aria-pressed="false">Audio generation</button><button type="button" data-topic="Speech" aria-pressed="false">Speech</button><button type="button" data-topic="Other" aria-pressed="false">Other</button>
+  </div>
+  <label class="search-label">Search publications<input type="search" id="paper-search" placeholder="Title, author, or venue…" autocomplete="off"></label>
+</div>
+<p class="results-count" id="results-count" aria-live="polite">13 records · journal and conference papers, preprints, a meeting abstract, and a thesis</p>
+<div id="publication-list">
+{% assign years = site.data.publications | group_by: 'year' %}
+{% for year in years %}<section class="year-group" aria-labelledby="year-{{ year.name }}"><h2 class="year-heading" id="year-{{ year.name }}">{{ year.name }}</h2>{% for paper in year.items %}{% include publication-card.html %}{% endfor %}</section>{% endfor %}
+</div>
+<p class="empty-state" id="empty-state" hidden>No matching publications. Try another topic or search term.</p>
+<p class="source-note">Publication records checked against Google Scholar in November 2026. Preprints, meeting abstracts, and the thesis are labeled separately.</p>
+<script src="/assets/js/publications.js" defer></script>

@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.nav != 'about' %}{{ page.title | escape }} | {% endif %}Xingyu Chen · Spatial Audio &amp; Machine Learning</title>
+  <meta name="description" content="Xingyu Chen is a PhD candidate at the University of Technology Sydney, researching spatial audio, personalized HRTFs, sound field reconstruction, and efficient audio generation.">
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}"><meta property="og:type" content="website"><meta property="og:title" content="{{ page.title | escape }} | Xingyu Chen"><meta property="og:description" content="Spatial audio, personalized HRTFs, sound field reconstruction, and efficient audio generation."><meta property="og:url" content="{{ site.url }}{{ page.url }}"><meta property="og:image" content="{{ site.url }}/images/profile.jpg"><meta name="theme-color" content="#f8f9f6">
+  <link rel="icon" href="/images/xc.svg" type="image/svg+xml"><link rel="stylesheet" href="/assets/css/academic.css">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Xingyu Chen","url":"https://xingyuaudio.github.io/","jobTitle":"PhD Candidate","affiliation":{"@type":"Organization","name":"University of Technology Sydney"},"sameAs":["https://scholar.google.com.au/citations?user=u7YilpkAAAAJ&hl=en","https://github.com/xingyuaudio","https://orcid.org/0000-0001-5711-7996"]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header"><div class="header-inner"><a class="wordmark" href="/" aria-label="Xingyu Chen, home"><span class="monogram" aria-hidden="true">xc.</span><span>Xingyu Chen</span></a><nav aria-label="Main navigation"><a href="/"{% if page.nav == 'about' %} aria-current="page"{% endif %}>About</a><a href="/publications/"{% if page.nav == 'publications' %} aria-current="page"{% endif %}>Publications</a><a href="/cv/"{% if page.nav == 'cv' %} aria-current="page"{% endif %}>CV</a><a href="/#service">Service</a></nav></div></header>
+<main id="main" class="container">{{ content }}</main>
+<footer class="site-footer"><div class="footer-inner"><div><strong>Xingyu Chen</strong><p>Spatial audio &amp; machine learning<br>University of Technology Sydney</p></div><div><a href="{{ site.data.profile.scholar }}">Google Scholar ↗</a><a href="{{ site.data.profile.github }}">GitHub ↗</a><a href="{{ site.data.profile.institutional_profile }}">UTS profile ↗</a></div><p class="footer-note">Updated November 2026<br>© 2026 Xingyu Chen</p></div></footer>
+</body>
+</html>
