@@ -12,6 +12,7 @@ redirect_from: [/about/, /about.html]
     <p class="role">PhD Candidate <span>/</span> University of Technology Sydney</p>
     <p class="intro">{{ site.data.profile.research_intro | escape }}</p>
     <p>{{ site.data.profile.research_statement | escape }}</p>
+    {% include contact.html %}
     <div class="profile-links"><a class="button" href="{{ site.data.profile.scholar }}">Google Scholar <span aria-hidden="true">↗</span></a><a href="{{ site.data.profile.github }}">GitHub ↗</a><a href="{{ site.data.profile.linkedin }}">LinkedIn ↗</a><a href="{{ site.data.profile.institutional_profile }}">UTS profile ↗</a><a href="/cv/">CV →</a></div>
   </div>
   <aside class="portrait-card"><img src="/images/profile.jpg" alt="Xingyu Chen profile image" width="300" height="300"><div><span class="small-label">RESEARCH FOCUS</span><p>Learning to capture,<br>reconstruct, and generate sound.</p></div></aside>

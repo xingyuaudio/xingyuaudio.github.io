@@ -106,6 +106,7 @@ redirect_from: [/about/, /about.html]
     <p class="role">PhD Candidate <span>/</span> University of Technology Sydney</p>
     <p class="intro">{{ site.data.profile.research_intro | escape }}</p>
     <p>{{ site.data.profile.research_statement | escape }}</p>
+    {% include contact.html %}
     <div class="profile-links"><a class="button" href="{{ site.data.profile.scholar }}">Google Scholar <span aria-hidden="true">↗</span></a><a href="{{ site.data.profile.github }}">GitHub ↗</a><a href="{{ site.data.profile.linkedin }}">LinkedIn ↗</a><a href="{{ site.data.profile.institutional_profile }}">UTS profile ↗</a><a href="/cv/">CV →</a></div>
   </div>
   <aside class="portrait-card"><img src="/images/profile.jpg" alt="Xingyu Chen profile image" width="300" height="300"><div><span class="small-label">RESEARCH FOCUS</span><p>Learning to capture,<br>reconstruct, and generate sound.</p></div></aside>
@@ -246,6 +247,7 @@ An English academic profile covering spatial audio, personalized HRTFs, sound fi
 - `_data/profile.yml`: professional links.
 - `_data/background.yml`: education and research / industry experience, listed separately in the web CV and PDF CV.
 - `_includes/reviewer-list.html`: journal review service.
+- `_includes/contact.html` and `assets/js/contact.js`: collaboration invitation and click-to-reveal contact. Keep the full email out of generated HTML and structured metadata; the client-side encoding deters basic harvesting but is not encryption.
 - `_pages/cv.html` and `files/Xingyu_Chen_CV.pdf`: web and downloadable CV.
 - `assets/css/academic.css`: responsive design; `assets/js/publications.js`: progressive publication filters.
 

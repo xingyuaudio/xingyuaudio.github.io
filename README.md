@@ -11,6 +11,7 @@ An English academic profile covering spatial audio, personalized HRTFs, sound fi
 - `_data/profile.yml`: professional links.
 - `_data/background.yml`: education and research / industry experience, listed separately in the web CV and PDF CV.
 - `_includes/reviewer-list.html`: journal review service.
+- `_includes/contact.html` and `assets/js/contact.js`: collaboration invitation and click-to-reveal contact. Keep the full email out of generated HTML and structured metadata; the client-side encoding deters basic harvesting but is not encryption.
 - `_pages/cv.html` and `files/Xingyu_Chen_CV.pdf`: web and downloadable CV.
 - `assets/css/academic.css`: responsive design; `assets/js/publications.js`: progressive publication filters.
 
