@@ -89,7 +89,8 @@ def write(path, content):
 write('_data/publications.yml', yaml.safe_dump(papers, sort_keys=False, allow_unicode=True, width=120))
 write('_data/profile.yml', yaml.safe_dump(dict(name='Xingyu Chen', role='PhD Candidate', institution='University of Technology Sydney',
      scholar=SCHOLAR, institutional_profile=PROFILE, github='https://github.com/xingyuaudio', orcid='https://orcid.org/0000-0001-5711-7996',
-     updated='November 2026'), sort_keys=False))
+     linkedin='https://www.linkedin.com/in/xingyu-chen-2b8618259/', research_intro='I study how machines can reconstruct and generate sound in ways that are grounded in the physical world and meaningful to human listeners.',
+     research_statement='Sound is shaped by sources, environments, and listeners. A recording captures only a partial observation of their interaction. My research asks how to represent this underlying structure so that we can infer beyond what is observed and generate sound with meaningful control. I am interested in what should be constrained by acoustics, what should be learned from data, and what must be preserved for human perception.', updated='November 2026'), sort_keys=False))
 write('_pages/about.html', '''
 ---
 layout: academic
@@ -103,9 +104,9 @@ redirect_from: [/about/, /about.html]
     <p class="eyebrow">SPATIAL AUDIO · MACHINE LEARNING</p>
     <h1 id="intro-title">Xingyu Chen</h1>
     <p class="role">PhD Candidate <span>/</span> University of Technology Sydney</p>
-    <p class="intro">I work on machine learning for spatial audio and audio generation, with a focus on personalized head-related transfer functions (HRTFs), sound field reconstruction, and efficient text-to-audio generation.</p>
-    <p>My research combines acoustic structure with learning-based methods: from physics-informed and geometry-aware models for spatial reconstruction to distributional post-training for one-step audio generators. Previously, I conducted MPhil research in the Audio &amp; Acoustic Signal Processing Group at the Australian National University.</p>
-    <div class="profile-links"><a class="button" href="{{ site.data.profile.scholar }}">Google Scholar <span aria-hidden="true">↗</span></a><a href="{{ site.data.profile.github }}">GitHub ↗</a><a href="{{ site.data.profile.institutional_profile }}">UTS profile ↗</a><a href="/cv/">CV →</a></div>
+    <p class="intro">{{ site.data.profile.research_intro | escape }}</p>
+    <p>{{ site.data.profile.research_statement | escape }}</p>
+    <div class="profile-links"><a class="button" href="{{ site.data.profile.scholar }}">Google Scholar <span aria-hidden="true">↗</span></a><a href="{{ site.data.profile.github }}">GitHub ↗</a><a href="{{ site.data.profile.linkedin }}">LinkedIn ↗</a><a href="{{ site.data.profile.institutional_profile }}">UTS profile ↗</a><a href="/cv/">CV →</a></div>
   </div>
   <aside class="portrait-card"><img src="/images/profile.jpg" alt="Xingyu Chen profile image" width="300" height="300"><div><span class="small-label">RESEARCH FOCUS</span><p>Learning to capture,<br>reconstruct, and generate sound.</p></div></aside>
 </section>
@@ -164,7 +165,7 @@ redirect_from: [/resume, /resume/]
 <section class="section"><h2>Publications</h2><p>Recent work includes FD-Conformer (JASA, 2026), GeoAtt (preprint, 2026), DriftAudio (preprint, 2026), and region-to-region sound field reconstruction (ICSV31, 2025).</p><a class="text-link" href="/publications/">View the complete publication list →</a></section>
 <section class="section"><h2>Academic service</h2><h3>Journal reviewer</h3>{% include reviewer-list.html %}</section>
 <section class="section"><h2>Earlier experience</h2><div class="cv-row"><div class="cv-date">2021 – 2022</div><div><h3>The Chinese University of Hong Kong, Shenzhen</h3><p>Research assistant. Research on invariant filtering and visual-inertial navigation.</p></div></div><div class="cv-row"><div class="cv-date">Teaching</div><div><h3>Australian National University</h3><p>Teaching assistant, ENGN4213: Digital Systems and Microprocessors.</p></div></div></section>
-<section class="section"><h2>Professional links</h2><div class="profile-links"><a href="{{ site.data.profile.scholar }}">Google Scholar ↗</a><a href="{{ site.data.profile.institutional_profile }}">UTS profile ↗</a><a href="{{ site.data.profile.github }}">GitHub ↗</a><a href="{{ site.data.profile.orcid }}">ORCID ↗</a></div></section>
+<section class="section"><h2>Professional links</h2><div class="profile-links"><a href="{{ site.data.profile.scholar }}">Google Scholar ↗</a><a href="{{ site.data.profile.linkedin }}">LinkedIn ↗</a><a href="{{ site.data.profile.institutional_profile }}">UTS profile ↗</a><a href="{{ site.data.profile.github }}">GitHub ↗</a><a href="{{ site.data.profile.orcid }}">ORCID ↗</a></div></section>
 ''')
 write('_includes/reviewer-list.html', '''
 <ul class="reviewer-list"><li>The Journal of the Acoustical Society of America <span>JASA</span></li><li>IEEE Open Journal of Signal Processing <span>OJSP</span></li><li>IEEE Signal Processing Letters <span>SPL</span></li></ul>
@@ -188,13 +189,13 @@ write('_layouts/academic.html', '''
   <meta name="description" content="Xingyu Chen is a PhD candidate at the University of Technology Sydney, researching spatial audio, personalized HRTFs, sound field reconstruction, and efficient audio generation.">
   <link rel="canonical" href="{{ site.url }}{{ page.url }}"><meta property="og:type" content="website"><meta property="og:title" content="{{ page.title | escape }} | Xingyu Chen"><meta property="og:description" content="Spatial audio, personalized HRTFs, sound field reconstruction, and efficient audio generation."><meta property="og:url" content="{{ site.url }}{{ page.url }}"><meta property="og:image" content="{{ site.url }}/images/profile.jpg"><meta name="theme-color" content="#f8f9f6">
   <link rel="icon" href="/images/xc.svg" type="image/svg+xml"><link rel="stylesheet" href="/assets/css/academic.css">
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Xingyu Chen","url":"https://xingyuaudio.github.io/","jobTitle":"PhD Candidate","affiliation":{"@type":"Organization","name":"University of Technology Sydney"},"sameAs":["https://scholar.google.com.au/citations?user=u7YilpkAAAAJ&hl=en","https://github.com/xingyuaudio","https://orcid.org/0000-0001-5711-7996"]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Xingyu Chen","url":"https://xingyuaudio.github.io/","jobTitle":"PhD Candidate","affiliation":{"@type":"Organization","name":"University of Technology Sydney"},"sameAs":["https://scholar.google.com.au/citations?user=u7YilpkAAAAJ&hl=en","https://github.com/xingyuaudio","https://orcid.org/0000-0001-5711-7996","https://www.linkedin.com/in/xingyu-chen-2b8618259/","https://profiles.uts.edu.au/student_Xingyu.Chen-8"]}</script>
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
 <header class="site-header"><div class="header-inner"><a class="wordmark" href="/" aria-label="Xingyu Chen, home"><span class="monogram" aria-hidden="true">xc.</span><span>Xingyu Chen</span></a><nav aria-label="Main navigation"><a href="/"{% if page.nav == 'about' %} aria-current="page"{% endif %}>About</a><a href="/publications/"{% if page.nav == 'publications' %} aria-current="page"{% endif %}>Publications</a><a href="/cv/"{% if page.nav == 'cv' %} aria-current="page"{% endif %}>CV</a><a href="/#service">Service</a></nav></div></header>
 <main id="main" class="container">{{ content }}</main>
-<footer class="site-footer"><div class="footer-inner"><div><strong>Xingyu Chen</strong><p>Spatial audio &amp; machine learning<br>University of Technology Sydney</p></div><div><a href="{{ site.data.profile.scholar }}">Google Scholar ↗</a><a href="{{ site.data.profile.github }}">GitHub ↗</a><a href="{{ site.data.profile.institutional_profile }}">UTS profile ↗</a></div><p class="footer-note">Updated November 2026<br>© 2026 Xingyu Chen</p></div></footer>
+<footer class="site-footer"><div class="footer-inner"><div><strong>Xingyu Chen</strong><p>Spatial audio &amp; machine learning<br>University of Technology Sydney</p></div><div><a href="{{ site.data.profile.scholar }}">Google Scholar ↗</a><a href="{{ site.data.profile.github }}">GitHub ↗</a><a href="{{ site.data.profile.linkedin }}">LinkedIn ↗</a><a href="{{ site.data.profile.institutional_profile }}">UTS profile ↗</a></div><p class="footer-note">Updated November 2026<br>© 2026 Xingyu Chen</p></div></footer>
 </body>
 </html>
 ''')

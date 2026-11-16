@@ -40,9 +40,9 @@ def publication(item,index):
 
 story += [p('Xingyu Chen','Name'),p('PhD Candidate | University of Technology Sydney','Subtitle'),
           p('Spatial audio | Personalized HRTFs | Sound field reconstruction | Audio generation','SmallCV'),
-          p(' &nbsp; / &nbsp; '.join([link('https://xingyuaudio.github.io/','Website'),link(profile['scholar'],'Google Scholar'),link(profile['github'],'GitHub'),link(profile['institutional_profile'],'UTS profile')]),'SmallCV')]
+          p(' &nbsp; / &nbsp; '.join([link('https://xingyuaudio.github.io/','Website'),link(profile['scholar'],'Google Scholar'),link(profile['github'],'GitHub'),link(profile['linkedin'],'LinkedIn'),link(profile['institutional_profile'],'UTS profile')]),'SmallCV')]
 section('Research profile')
-story += [p('I work on machine learning for spatial audio and audio generation, combining acoustic structure with physics-informed and geometry-aware models. My recent work covers sparse HRTF reconstruction and distributional post-training for one-step text-to-audio generation.')]
+story += [p(escape(profile['research_intro'])),p(escape(profile['research_statement']))]
 section('Education and research')
 story += [p('<b>University of Technology Sydney</b> | 2024 - Present<br/>PhD candidate, Centre for Audio, Acoustics and Vibration.'),
           p('<b>Australian National University</b><br/>MPhil research, Audio &amp; Acoustic Signal Processing Group.<br/>Thesis: <i>Learning-integrated Methods for Spatial Audio Capture and Reproduction</i> (Google Scholar record: 2025).<br/>Bachelor of Engineering (Honours), Mechatronics.')]
