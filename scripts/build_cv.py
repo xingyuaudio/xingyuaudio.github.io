@@ -47,12 +47,12 @@ story += [p(escape(profile['research_intro'])),p(escape(profile['research_statem
 section('Education')
 for entry in background['education']:
     story.append(p('<b>'+escape(entry['institution'])+'</b> | '+escape(entry['dates'])+'<br/>'+escape(entry['qualification'])+'. '+escape(entry['description'])))
-section('Academic service')
-story += [p('Journal reviewer: The Journal of the Acoustical Society of America (JASA); IEEE Open Journal of Signal Processing (OJSP); IEEE Signal Processing Letters (SPL).')]
-section('Research and industry experience')
+section('Work experience')
 for entry in background['experience']:
     date_text = '' if entry['dates'] == 'Teaching' else ' ('+escape(entry['dates'])+')'
     story.append(p('<b>'+escape(entry['qualification'])+'</b>, '+escape(entry['institution'])+date_text+'. '+escape(entry['description'])))
+section('Academic service')
+story += [p('Journal reviewer: The Journal of the Acoustical Society of America (JASA); IEEE Open Journal of Signal Processing (OJSP); IEEE Signal Processing Letters (SPL).')]
 section('Recent publications and preprints')
 for n,item in enumerate(papers[:3],1):story.append(publication(item,n))
 story += [PageBreak(),p('Publications (continued)','Name'),p('Conference papers, earlier work, meeting abstract, and thesis.','SmallCV')]
