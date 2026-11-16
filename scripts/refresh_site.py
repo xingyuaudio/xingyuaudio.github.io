@@ -107,7 +107,7 @@ redirect_from: [/about/, /about.html]
     <p>My research combines acoustic structure with learning-based methods: from physics-informed and geometry-aware models for spatial reconstruction to distributional post-training for one-step audio generators. Previously, I conducted MPhil research in the Audio &amp; Acoustic Signal Processing Group at the Australian National University.</p>
     <div class="profile-links"><a class="button" href="{{ site.data.profile.scholar }}">Google Scholar <span aria-hidden="true">↗</span></a><a href="{{ site.data.profile.github }}">GitHub ↗</a><a href="{{ site.data.profile.institutional_profile }}">UTS profile ↗</a><a href="/cv/">CV →</a></div>
   </div>
-  <aside class="portrait-card"><img src="/images/profile.jpg" alt="Portrait of Xingyu Chen" width="300" height="300"><div><span class="small-label">RESEARCH FOCUS</span><p>Learning to capture,<br>reconstruct, and generate sound.</p></div></aside>
+  <aside class="portrait-card"><img src="/images/profile.jpg" alt="Xingyu Chen profile image" width="300" height="300"><div><span class="small-label">RESEARCH FOCUS</span><p>Learning to capture,<br>reconstruct, and generate sound.</p></div></aside>
 </section>
 <section class="section" aria-labelledby="research-title">
   <div class="section-heading"><h2 id="research-title">Research directions</h2><span class="section-note">Acoustics meets learning</span></div>
