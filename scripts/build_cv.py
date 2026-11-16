@@ -12,6 +12,7 @@ from reportlab.pdfbase.ttfonts import TTFont
 root = Path(__file__).resolve().parents[1]
 papers = yaml.safe_load((root/'_data/publications.yml').read_text())
 profile = yaml.safe_load((root/'_data/profile.yml').read_text())
+background = yaml.safe_load((root/'_data/background.yml').read_text())
 styles = getSampleStyleSheet()
 font_root=Path('/usr/share/fonts/truetype/dejavu')
 for name, file in [('CVSans','DejaVuSans.ttf'),('CVSans-Bold','DejaVuSans-Bold.ttf'),('CVSans-Italic','DejaVuSans-Oblique.ttf'),('CVSerif','DejaVuSerif.ttf')]:
@@ -43,14 +44,15 @@ story += [p('Xingyu Chen','Name'),p('PhD Candidate | University of Technology Sy
           p(' &nbsp; / &nbsp; '.join([link('https://xingyuaudio.github.io/','Website'),link(profile['scholar'],'Google Scholar'),link(profile['github'],'GitHub'),link(profile['linkedin'],'LinkedIn'),link(profile['institutional_profile'],'UTS profile')]),'SmallCV')]
 section('Research profile')
 story += [p(escape(profile['research_intro'])),p(escape(profile['research_statement']))]
-section('Education and research')
-story += [p('<b>University of Technology Sydney</b> | 2024 - Present<br/>PhD candidate, Centre for Audio, Acoustics and Vibration.'),
-          p('<b>Australian National University</b><br/>MPhil research, Audio &amp; Acoustic Signal Processing Group.<br/>Thesis: <i>Learning-integrated Methods for Spatial Audio Capture and Reproduction</i> (Google Scholar record: 2025).<br/>Bachelor of Engineering (Honours), Mechatronics.')]
+section('Education')
+for entry in background['education']:
+    story.append(p('<b>'+escape(entry['institution'])+'</b> | '+escape(entry['dates'])+'<br/>'+escape(entry['qualification'])+'. '+escape(entry['description'])))
 section('Academic service')
 story += [p('Journal reviewer: The Journal of the Acoustical Society of America (JASA); IEEE Open Journal of Signal Processing (OJSP); IEEE Signal Processing Letters (SPL).')]
-section('Earlier experience')
-story += [p('<b>Research Assistant</b>, The Chinese University of Hong Kong, Shenzhen (2021 - 2022). Invariant filtering and visual-inertial navigation.'),
-          p('<b>Teaching Assistant</b>, Australian National University. ENGN4213: Digital Systems and Microprocessors.')]
+section('Research and industry experience')
+for entry in background['experience']:
+    date_text = '' if entry['dates'] == 'Teaching' else ' ('+escape(entry['dates'])+')'
+    story.append(p('<b>'+escape(entry['qualification'])+'</b>, '+escape(entry['institution'])+date_text+'. '+escape(entry['description'])))
 section('Recent publications and preprints')
 for n,item in enumerate(papers[:3],1):story.append(publication(item,n))
 story += [PageBreak(),p('Publications (continued)','Name'),p('Conference papers, earlier work, meeting abstract, and thesis.','SmallCV')]

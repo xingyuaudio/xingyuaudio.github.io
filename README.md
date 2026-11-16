@@ -9,6 +9,7 @@ An English academic profile covering spatial audio, personalized HRTFs, sound fi
 - `_pages/about.html`: biography and research directions.
 - `_data/publications.yml`: canonical publication records, resources, summaries, and homepage selection (`featured: true`). Keep journal papers, conference papers, preprints, abstracts, and theses labeled correctly.
 - `_data/profile.yml`: professional links.
+- `_data/background.yml`: education and research / industry experience, shared by the homepage, web CV, and PDF CV.
 - `_includes/reviewer-list.html`: journal review service.
 - `_pages/cv.html` and `files/Xingyu_Chen_CV.pdf`: web and downloadable CV.
 - `assets/css/academic.css`: responsive design; `assets/js/publications.js`: progressive publication filters.

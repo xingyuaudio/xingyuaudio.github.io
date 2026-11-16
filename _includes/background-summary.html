@@ -1,0 +1,5 @@
+<section class="section" aria-labelledby="background-title">
+  <div class="section-heading"><h2 id="background-title">Education &amp; experience</h2><a class="text-link" href="/cv/">Full CV →</a></div>
+  {% for entry in site.data.background.experience limit: 1 %}{% include background-row.html %}{% endfor %}
+  {% for entry in site.data.background.education %}{% include background-row.html %}{% endfor %}
+</section>

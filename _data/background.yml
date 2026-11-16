@@ -1,0 +1,26 @@
+education:
+  - dates: 2024 – Present
+    institution: University of Technology Sydney
+    qualification: PhD candidate
+    description: Centre for Audio, Acoustics and Vibration.
+  - dates: 2022 – 2024
+    institution: Australian National University
+    qualification: Master of Philosophy (MPhil)
+    description: Audio & Acoustic Signal Processing Group.
+  - dates: 2017 – 2021
+    institution: Australian National University
+    qualification: Bachelor of Engineering (Honours)
+    description: Mechatronic Systems.
+experience:
+  - dates: Oct 2026 – Present
+    institution: Tencent Music Entertainment Group (TME)
+    qualification: Research Intern — Applied Research
+    description: Immersive audio and generative modeling.
+  - dates: 2021 – 2022
+    institution: The Chinese University of Hong Kong, Shenzhen
+    qualification: Research Assistant
+    description: Invariant filtering and visual-inertial navigation.
+  - dates: Teaching
+    institution: Australian National University
+    qualification: Teaching Assistant
+    description: "ENGN4213: Digital Systems and Microprocessors."
