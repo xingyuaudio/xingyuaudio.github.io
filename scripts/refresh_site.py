@@ -189,7 +189,7 @@ write('_layouts/academic.html', '''
   <title>{% if page.nav != 'about' %}{{ page.title | escape }} | {% endif %}Xingyu Chen · Spatial Audio &amp; Machine Learning</title>
   <meta name="description" content="Xingyu Chen is a PhD candidate at the University of Technology Sydney, researching spatial audio, personalized HRTFs, sound field reconstruction, and efficient audio generation.">
   <link rel="canonical" href="{{ site.url }}{{ page.url }}"><meta property="og:type" content="website"><meta property="og:title" content="{{ page.title | escape }} | Xingyu Chen"><meta property="og:description" content="Spatial audio, personalized HRTFs, sound field reconstruction, and efficient audio generation."><meta property="og:url" content="{{ site.url }}{{ page.url }}"><meta property="og:image" content="{{ site.url }}/images/profile.jpg"><meta name="theme-color" content="#f8f9f6">
-  <link rel="icon" href="/images/xc.svg" type="image/svg+xml"><link rel="stylesheet" href="/assets/css/academic.css">
+  <link rel="icon" href="/images/xc.svg" type="image/svg+xml"><link rel="stylesheet" href="/assets/css/academic.css?v={{ site.time | date: '%Y%m%d%H%M%S' }}">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Xingyu Chen","url":"https://xingyuaudio.github.io/","jobTitle":"PhD Candidate","affiliation":{"@type":"Organization","name":"University of Technology Sydney"},"sameAs":["https://scholar.google.com.au/citations?user=u7YilpkAAAAJ&hl=en","https://github.com/xingyuaudio","https://orcid.org/0000-0001-5711-7996","https://www.linkedin.com/in/xingyu-chen-2b8618259/","https://profiles.uts.edu.au/student_Xingyu.Chen-8"]}</script>
 </head>
 <body>
