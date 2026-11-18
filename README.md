@@ -9,6 +9,7 @@ An English academic profile covering spatial audio, personalized HRTFs, sound fi
 - `_pages/about.html`: biography and research directions.
 - `_data/publications.yml`: canonical publication records, resources, summaries, and homepage selection (`featured: true`). Keep journal papers, conference papers, preprints, abstracts, and theses labeled correctly.
 - `_data/profile.yml`: professional links.
+- `_data/cv.yml`: general CV summary, three research areas, technical skills, and publication categories.
 - `_data/background.yml`: education and research / industry experience, listed separately in the web CV and PDF CV.
 - `_includes/reviewer-list.html`: journal review service.
 - `_includes/contact.html`: collaboration invitation and an email contact link to the official UTS profile. No email address is displayed, encoded, or embedded in the contact section.

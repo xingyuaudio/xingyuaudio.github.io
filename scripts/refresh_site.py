@@ -160,11 +160,13 @@ permalink: /cv/
 nav: cv
 redirect_from: [/resume, /resume/]
 ---
-<header class="page-heading"><p class="eyebrow">BACKGROUND &amp; SERVICE</p><h1>Curriculum vitae</h1><p>Xingyu Chen · PhD Candidate, University of Technology Sydney</p><a class="button" href="/files/Xingyu_Chen_CV.pdf">Download PDF CV ↓</a></header>
-<section class="section"><h2>Research interests</h2><p>Spatial audio; personalized HRTFs; sound field reconstruction; physics-informed machine learning; one-step text-to-audio generation.</p></section>
+<header class="page-heading"><p class="eyebrow">CURRICULUM VITAE</p><h1>Xingyu Chen</h1><p>PhD Candidate, University of Technology Sydney</p><a class="button" href="/files/Xingyu_Chen_CV.pdf">Download PDF CV ↓</a></header>
+<section class="section"><h2>Research profile</h2><p>{{ site.data.cv.summary | escape }}</p></section>
 <section class="section"><h2>Education</h2>{% for entry in site.data.background.education %}{% include background-row.html %}{% endfor %}</section>
-<section class="section"><h2>Work experience</h2>{% for entry in site.data.background.experience %}{% include background-row.html %}{% endfor %}</section>
-<section class="section"><h2>Publications</h2><p>Recent work includes FD-Conformer (JASA, 2026), GeoAtt (preprint, 2026), DriftAudio (preprint, 2026), and region-to-region sound field reconstruction (ICSV31, 2025).</p><a class="text-link" href="/publications/">View the complete publication list →</a></section>
+<section class="section"><h2>Research experience</h2>{% for project in site.data.cv.research %}<div class="cv-row"><div class="cv-date">{{ project.dates | escape }}</div><div><h3>{{ project.title | escape }}</h3><ul class="cv-bullets">{% for bullet in project.bullets %}<li>{{ bullet | escape }}</li>{% endfor %}</ul><div class="paper-links">{% for link in project.links %}<a href="{{ link[1] }}">{{ link[0] }} ↗</a>{% endfor %}</div></div></div>{% endfor %}</section>
+<section class="section"><h2>Professional experience</h2>{% for entry in site.data.background.experience %}{% include background-row.html %}{% endfor %}</section>
+<section class="section"><h2>Technical skills</h2>{% for skill in site.data.cv.skills %}<p class="cv-skill"><strong>{{ skill.label | escape }}:</strong> {{ skill.value | escape }}</p>{% endfor %}</section>
+<section class="section cv-publications-section" id="cv-publications"><h2>Publications</h2>{% for category in site.data.cv.publication_groups %}<div class="cv-publication-group"><h3>{{ category.title | escape }}</h3>{% for paper in site.data.publications %}{% if category.kinds contains paper.kind %}{% include cv-publication.html %}{% endif %}{% endfor %}</div>{% endfor %}</section>
 <section class="section"><h2>Academic service</h2><h3>Journal reviewer</h3>{% include reviewer-list.html %}</section>
 <section class="section"><h2>Professional links</h2><div class="profile-links"><a href="{{ site.data.profile.scholar }}">Google Scholar ↗</a><a href="{{ site.data.profile.linkedin }}">LinkedIn ↗</a><a href="{{ site.data.profile.institutional_profile }}">UTS profile ↗</a><a href="{{ site.data.profile.github }}">GitHub ↗</a><a href="{{ site.data.profile.orcid }}">ORCID ↗</a></div></section>
 ''')
@@ -245,6 +247,7 @@ An English academic profile covering spatial audio, personalized HRTFs, sound fi
 - `_pages/about.html`: biography and research directions.
 - `_data/publications.yml`: canonical publication records, resources, summaries, and homepage selection (`featured: true`). Keep journal papers, conference papers, preprints, abstracts, and theses labeled correctly.
 - `_data/profile.yml`: professional links.
+- `_data/cv.yml`: general CV summary, three research areas, technical skills, and publication categories.
 - `_data/background.yml`: education and research / industry experience, listed separately in the web CV and PDF CV.
 - `_includes/reviewer-list.html`: journal review service.
 - `_includes/contact.html`: collaboration invitation and an email contact link to the official UTS profile. No email address is displayed, encoded, or embedded in the contact section.

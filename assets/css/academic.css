@@ -13,3 +13,6 @@
     hyphens:auto;
   }
 }
+
+/* CV details share the same research and background data as the PDF. */
+.cv-bullets{padding-left:18px;margin:8px 0 14px;font-size:14px;color:var(--muted)}.cv-bullets li{margin-bottom:8px}.cv-row .cv-note{font-size:12px;color:var(--accent)}.cv-skill{font-size:14px;color:var(--muted)}.cv-skill strong{color:var(--ink)}.cv-publication-group{margin:26px 0 34px}.cv-publication-group>h3{color:var(--accent);font-size:17px}.cv-publication{padding:14px 0;border-bottom:1px solid var(--line);break-inside:avoid}.cv-publication h4{font-size:15px;line-height:1.5;margin:0 0 7px}.cv-publication h4 a{color:var(--ink)}.cv-publication .venue{margin-bottom:0}.cv-publication-type{font-style:normal;white-space:nowrap}@media(max-width:620px){.cv-bullets,.cv-skill{font-size:13px}.cv-publication h4{font-size:14px}}@media print{.cv-publications-section{break-before:page}}

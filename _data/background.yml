@@ -1,26 +1,35 @@
 education:
-  - dates: 2024 – Present
-    institution: University of Technology Sydney
-    qualification: PhD candidate
-    description: Centre for Audio, Acoustics and Vibration.
-  - dates: 2022 – 2024
-    institution: Australian National University
-    qualification: Master of Philosophy (MPhil)
-    description: Audio & Acoustic Signal Processing Group.
-  - dates: 2017 – 2021
-    institution: Australian National University
-    qualification: Bachelor of Engineering (Honours)
-    description: Mechatronic Systems.
+- dates: 2024 – Present
+  institution: University of Technology Sydney
+  qualification: PhD candidate
+  description: Centre for Audio, Acoustics and Vibration.
+- dates: 2022 – 2024
+  institution: Australian National University
+  qualification: Master of Philosophy (MPhil)
+  description: Audio & Acoustic Signal Processing Group.
+- dates: 2017 – 2021
+  institution: Australian National University
+  qualification: Bachelor of Engineering (Honours)
+  description: Mechatronic Systems.
 experience:
-  - dates: Oct 2026 – Present
-    institution: Tencent Music Entertainment Group (TME)
-    qualification: Research Intern — Applied Research
-    description: Immersive audio and generative modeling.
-  - dates: 2021 – 2022
-    institution: The Chinese University of Hong Kong, Shenzhen
-    qualification: Research Assistant
-    description: Invariant filtering and visual-inertial navigation.
-  - dates: Teaching
-    institution: Australian National University
-    qualification: Teaching Assistant
-    description: "ENGN4213: Digital Systems and Microprocessors."
+- dates: Oct 2026 – Present
+  institution: Tencent Music Entertainment (QQ Music), Shenzhen
+  qualification: Research Intern — Applied Research
+  note: 'Expected completion: January 2027.'
+  bullets:
+  - Research and implement personalized HRTF functionality for Premium Panoramic Sound 4.0.
+  - Design and implement an objective spatial-quality evaluation workflow for 7.1.4 home-theater systems.
+  - Design and implement an objective spatial-quality evaluation workflow for in-car spatial reproduction systems.
+- dates: Feb 2026 – Present
+  institution: University of Technology Sydney
+  qualification: Research Project Mentor
+  description: Guide a student project on HRTF prediction from 3D head geometry, including implementation, experimental
+    design, and ablation analysis.
+- dates: Feb 2023 – Jun 2023
+  institution: Australian National University
+  qualification: Teaching Assistant
+  description: 'ENGN4213: Digital Systems and Microprocessors.'
+- dates: 2021 – 2022
+  institution: The Chinese University of Hong Kong, Shenzhen
+  qualification: Research Assistant
+  description: Invariant filtering and visual-inertial navigation.

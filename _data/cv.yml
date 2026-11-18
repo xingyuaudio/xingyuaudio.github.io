@@ -1,0 +1,43 @@
+summary: PhD candidate researching generative audio, personalized HRTFs, and physics-informed acoustic-field modeling.
+updated: 18 November 2026
+research:
+  - title: Generative Audio
+    dates: 2026 - Present
+    bullets:
+      - Developed DriftAudio, a distributional post-training method for pretrained text-to-audio generators that preserves one-step inference.
+      - Reproduced MeanAudio and FdAudio; investigated audio feature representations, conditioning, and distributional objectives through controlled experiments.
+    links:
+      DriftAudio: https://arxiv.org/abs/2609.27598
+      Code and demo: https://github.com/xingyuaudio/DriftAudio
+  - title: Personalized HRTF
+    dates: 2023 - Present
+    bullets:
+      - Developed frequency-domain feature modeling for sparse HRTF reconstruction, including an FD-Conformer evaluated on SONICOM and HUTUBS (JASA, 2026).
+      - Developed GeoAtt, using geometry-aware, query-conditioned aggregation to support varying measurement counts and layouts with a single trained model.
+      - Investigating HRTF prediction from 3D head meshes, focusing on geometric representations and low-dimensional acoustic targets (ongoing).
+    links:
+      FD-Conformer: https://doi.org/10.1121/10.0047189
+      GeoAtt: https://arxiv.org/abs/2609.25995
+  - title: Neural Acoustic Fields
+    dates: 2022 - 2025
+    bullets:
+      - Developed physics-informed neural methods for sound-field reconstruction using acoustic wave-equation and boundary constraints.
+      - Extended reconstruction to region-to-region estimation with permutation-invariant architectures that preserve acoustic reciprocity (ICSV31, 2025).
+    links:
+      Region-to-region reconstruction: https://arxiv.org/abs/2601.19491
+skills:
+  - label: Programming and frameworks
+    value: Python, PyTorch, MATLAB.
+  - label: Generative modeling
+    value: Text-to-audio generation, flow matching, one-step generation, distributional post-training.
+  - label: Audio and acoustics
+    value: HRTF modeling, spherical harmonics, sound-field reconstruction, physics-informed neural networks, RIR measurement, binaural and spatial-audio evaluation.
+publication_groups:
+  - title: Journal articles
+    kinds: [Journal]
+  - title: Conference papers
+    kinds: [Conference]
+  - title: Preprints
+    kinds: [Preprint]
+  - title: Other
+    kinds: [Thesis, Meeting abstract]
