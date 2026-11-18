@@ -142,8 +142,13 @@ for category in cv['publication_groups']:
         ]))
 
 section('Academic service')
-story.append(p('<b>Journal reviewer:</b> The Journal of the Acoustical Society of America (JASA); '
-               'IEEE Open Journal of Signal Processing (OJSP); IEEE Signal Processing Letters (SPL).'))
+story.append(p('<b>Journal reviewer:</b>'))
+for journal in [
+    'The Journal of the Acoustical Society of America (JASA)',
+    'IEEE Open Journal of Signal Processing (OJSP)',
+    'IEEE Signal Processing Letters (SPL)',
+]:
+    story.append(bullet(journal))
 
 def footer(canvas, doc):
     canvas.saveState()

@@ -17,9 +17,8 @@ experience:
   qualification: Research Intern — Applied Research
   note: 'Expected completion: January 2027.'
   bullets:
-  - Research and implement personalized HRTF functionality for Premium Panoramic Sound 4.0.
-  - Design and implement an objective spatial-quality evaluation workflow for 7.1.4 home-theater systems.
-  - Design and implement an objective spatial-quality evaluation workflow for in-car spatial reproduction systems.
+  - Research personalized spatial audio and immersive music generation.
+  - Develop methods for the objective evaluation of spatial audio reproduction across different listening environments.
 - dates: Feb 2026 – Present
   institution: University of Technology Sydney
   qualification: Research Project Mentor
